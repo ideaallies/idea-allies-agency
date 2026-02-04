@@ -1,7 +1,7 @@
 {
   "name": "idea-allies-agency",
   "version": "1.0.0",
-  "description": "Upwork automation pipeline for Idea Allies agency",
+  "description": "Freelance job discovery, scoring, and proposal generation pipeline for Idea Allies LTD — supports Upwork, Freelancer, Guru, and PeoplePerHour via Vollna",
   "type": "module",
   "scripts": {
     "auto": "npx tsx src/automation/cron.ts",
