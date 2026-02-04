@@ -17,7 +17,7 @@ dist/
 .vscode/
 .idea/
 *.swp
-.claude/
+.claude/settings.local.json
 
 # OS
 .DS_Store
