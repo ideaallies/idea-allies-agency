@@ -1,3 +1,4 @@
+import "dotenv/config";
 import type { Job } from "../db/tracker.js";
 
 const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
