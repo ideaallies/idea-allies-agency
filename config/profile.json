@@ -1,34 +1,164 @@
 {
   "agency": {
-    "name": "Idea Allies",
+    "name": "Idea Allies LTD",
+    "website": "https://ideaallies.com",
     "tagline": "Turning Ideas into Digital Reality",
     "expertise": [
       "Full-Stack Web Development",
       "Next.js & React Applications",
+      "Vue.js Applications",
       "TypeScript & Node.js",
       "Tailwind CSS & Modern UI",
       "API Development & Integration",
-      "Database Design & Optimization"
+      "WordPress/WooCommerce Headless Frontends",
+      "Database Design & Optimization",
+      "AI Chatbots & Data Visualization"
     ],
     "techStack": {
-      "frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "frontend": ["Next.js", "React", "Vue.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "backend": ["Node.js", "Express", "Bun", "tRPC", "GraphQL"],
       "databases": ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Drizzle"],
       "cloud": ["Vercel", "AWS", "Railway", "Supabase", "Cloudflare"],
-      "tools": ["Git", "Docker", "GitHub Actions", "Stripe", "Auth.js"]
-    }
+      "tools": ["Git", "Docker", "GitHub Actions", "Stripe", "Auth.js"],
+      "other": ["Python", "WordPress", "WooCommerce"]
+    },
+    "sectors": [
+      "Healthcare",
+      "Education",
+      "Property",
+      "Finance & Accounting",
+      "Non-Profit",
+      "Events & Ticketing",
+      "Design"
+    ]
   },
   "owner": {
-    "name": "Olatunbosun Bellaire",
-    "github": "olatunbell",
+    "name": "Ola Bello",
+    "github": "ideaallies",
+    "personalGithub": "olatunbell",
     "title": "Lead Developer",
     "yearsExperience": 5,
     "timezone": "America/New_York"
   },
   "portfolio": {
-    "repos": [],
-    "highlights": [],
-    "lastSynced": null
+    "repos": [
+      {
+        "name": "Combat Tix",
+        "org": "Combat-Tix",
+        "repos": ["combat-tix-frontend", "combat-tix-backend"],
+        "tech": ["TypeScript", "JavaScript", "Next.js", "Node.js"],
+        "url": "https://combat-tix-frontend.vercel.app",
+        "description": "Full-stack event ticketing platform",
+        "sector": "Events & Ticketing"
+      },
+      {
+        "name": "Dsgnr",
+        "org": "dsgnrinitiative",
+        "repos": ["dsgnr"],
+        "tech": ["TypeScript", "Next.js"],
+        "url": "https://dsgnr-nine.vercel.app",
+        "description": "Design initiative platform",
+        "sector": "Design"
+      },
+      {
+        "name": "Evolution Impact",
+        "org": "evolutionimpactinitiative",
+        "repos": ["evolutionimpact"],
+        "tech": ["TypeScript", "Next.js"],
+        "url": "https://evolutionimpact.vercel.app",
+        "description": "Non-profit initiative website",
+        "sector": "Non-Profit"
+      },
+      {
+        "name": "Inreach Support Services",
+        "org": "inreachsupportservices-del",
+        "repos": ["Inreach"],
+        "tech": ["TypeScript", "Next.js"],
+        "url": "https://inreach-iota.vercel.app",
+        "description": "Support services platform",
+        "sector": "Healthcare"
+      },
+      {
+        "name": "Melburay Clinic",
+        "org": "melburayclinic",
+        "repos": ["melburay-clinic"],
+        "tech": ["TypeScript", "Next.js"],
+        "url": null,
+        "description": "Nurse-led private health clinic website in Bromley, UK",
+        "sector": "Healthcare"
+      },
+      {
+        "name": "Jobe Health",
+        "org": "olatunbell",
+        "repos": ["jobehealth-frontend"],
+        "tech": ["TypeScript", "Next.js", "Tailwind", "WordPress", "WooCommerce"],
+        "url": null,
+        "description": "Headless Next.js + Tailwind frontend for WordPress/WooCommerce health platform",
+        "sector": "Healthcare"
+      },
+      {
+        "name": "Spring Lane Nursery",
+        "org": "springlanenursery",
+        "repos": ["spring-lane-nursery-app"],
+        "tech": ["TypeScript", "Next.js"],
+        "url": "https://spring-lane-nursery-app.vercel.app",
+        "description": "Nursery management application",
+        "sector": "Education"
+      },
+      {
+        "name": "Ogle",
+        "org": "ogle-ng",
+        "repos": ["ogle-frontend", "ogle-backend"],
+        "tech": ["TypeScript", "JavaScript", "Next.js", "Node.js"],
+        "url": "https://ogle-frontend-three.vercel.app",
+        "description": "Full-stack web application",
+        "sector": "General"
+      },
+      {
+        "name": "Truckey Property",
+        "org": "Trukeyproperty",
+        "repos": ["truckey"],
+        "tech": ["TypeScript", "Next.js"],
+        "url": "https://truckey-xggn.vercel.app",
+        "description": "Property listing and management platform",
+        "sector": "Property"
+      },
+      {
+        "name": "Trustwell Accounting",
+        "org": "trustwellaccounting",
+        "repos": ["trustwell-accounting"],
+        "tech": ["TypeScript", "Next.js", "Tailwind"],
+        "url": "https://trustwell-accounting.vercel.app",
+        "description": "Professional accounting firm website for UK accountants serving founders & small businesses",
+        "sector": "Finance & Accounting"
+      },
+      {
+        "name": "TRCN (Teachers Registration Council of Nigeria)",
+        "org": "TRCN-HQ",
+        "repos": ["trcn-website-frontend", "trcn-admin", "trcn-teacher-portal", "trcn-backend", "MCPD-portal", "teacher-nexus-nigeria-home-91", "TRCN-CHATBOT", "TRCN-text-to-visualization-tool"],
+        "tech": ["Vue.js", "TypeScript", "Python", "Node.js"],
+        "url": null,
+        "description": "Full suite for Nigeria's teacher registration body — public website, admin portal, teacher portal, backend API, MCPD registration, AI chatbot, and data visualization tool",
+        "sector": "Education"
+      },
+      {
+        "name": "Prose Refinery",
+        "org": "ProseRefinery",
+        "repos": ["prose-refinery"],
+        "tech": ["TypeScript", "Next.js", "React", "Tailwind CSS"],
+        "url": "https://prose-refinery-eta.vercel.app",
+        "description": "Precision editorial services website for speculative fiction authors",
+        "sector": "Publishing & Editorial"
+      }
+    ],
+    "highlights": [
+      "TRCN — 8-repo full suite for a government education body (Vue + TS + Python)",
+      "Combat Tix — Full-stack event ticketing platform",
+      "Trustwell Accounting — Professional UK accounting firm website",
+      "Jobe Health — Headless WordPress/WooCommerce with Next.js",
+      "Melburay Clinic — Healthcare sector website"
+    ],
+    "lastSynced": "2026-02-04"
   },
   "upwork": {
     "profileUrl": "",
@@ -49,12 +179,14 @@
     "Clear communication with daily updates",
     "Production-ready code from day one",
     "Modern tech stack expertise",
-    "Full-stack capability - no handoffs needed"
+    "Full-stack capability - no handoffs needed",
+    "Experience across healthcare, education, property, and finance sectors",
+    "12 completed client projects with live deployments"
   ],
   "socialProof": {
     "jobSuccessScore": null,
     "totalEarnings": null,
-    "completedProjects": 0,
+    "completedProjects": 12,
     "testimonials": []
   }
 }
