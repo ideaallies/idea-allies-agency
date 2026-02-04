@@ -1,0 +1,88 @@
+{
+  "weights": {
+    "budget": 25,
+    "techMatch": 30,
+    "clientQuality": 20,
+    "projectClarity": 15,
+    "timing": 10
+  },
+  "thresholds": {
+    "autoPropose": 75,
+    "alertHot": 70,
+    "alertWarm": 50,
+    "ignore": 30
+  },
+  "budget": {
+    "fixed": {
+      "excellent": { "min": 2000, "score": 100 },
+      "good": { "min": 1000, "score": 80 },
+      "acceptable": { "min": 500, "score": 60 },
+      "low": { "min": 200, "score": 30 },
+      "tooLow": { "min": 0, "score": 0 }
+    },
+    "hourly": {
+      "excellent": { "min": 75, "score": 100 },
+      "good": { "min": 50, "score": 80 },
+      "acceptable": { "min": 30, "score": 60 },
+      "low": { "min": 20, "score": 30 },
+      "tooLow": { "min": 0, "score": 0 }
+    }
+  },
+  "techKeywords": {
+    "primary": {
+      "keywords": ["next.js", "nextjs", "react", "typescript", "tailwind", "node.js", "nodejs", "react.js", "reactjs"],
+      "score": 100
+    },
+    "secondary": {
+      "keywords": ["javascript", "css", "html", "api", "full-stack", "fullstack", "frontend", "backend", "web developer", "web application", "saas", "dashboard", "python", "django", "flask", "express", "nest.js", "nestjs"],
+      "score": 70
+    },
+    "bonus": {
+      "keywords": ["prisma", "trpc", "graphql", "postgresql", "mongodb", "stripe", "auth", "vercel", "aws", "supabase", "firebase", "redis", "docker", "claude", "ai", "openai", "llm", "cursor", "automation"],
+      "score": 20
+    },
+    "negative": {
+      "keywords": ["wordpress", "shopify", "wix", "squarespace", "webflow"],
+      "score": -30
+    }
+  },
+  "clientSignals": {
+    "positive": {
+      "paymentVerified": 30,
+      "hireRate50Plus": 20,
+      "spent10kPlus": 25,
+      "longTermPotential": 15,
+      "clearRequirements": 10
+    },
+    "negative": {
+      "noPaymentMethod": -40,
+      "hireRateBelow20": -20,
+      "newClient": -10,
+      "vagueRequirements": -15,
+      "unrealisticDeadline": -20
+    }
+  },
+  "projectClarity": {
+    "indicators": {
+      "hasMilestones": 20,
+      "hasExamples": 15,
+      "hasTechSpec": 25,
+      "hasTimeline": 15,
+      "detailedDescription": 25
+    }
+  },
+  "timing": {
+    "postedWithin1Hour": 100,
+    "postedWithin3Hours": 80,
+    "postedWithin6Hours": 60,
+    "postedWithin12Hours": 40,
+    "postedWithin24Hours": 20,
+    "olderThan24Hours": 0
+  },
+  "autoRejectReasons": [
+    "budget_too_low",
+    "no_payment_verified",
+    "tech_mismatch",
+    "location_restricted"
+  ]
+}

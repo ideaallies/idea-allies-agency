@@ -1,0 +1,60 @@
+{
+  "agency": {
+    "name": "Idea Allies",
+    "tagline": "Turning Ideas into Digital Reality",
+    "expertise": [
+      "Full-Stack Web Development",
+      "Next.js & React Applications",
+      "TypeScript & Node.js",
+      "Tailwind CSS & Modern UI",
+      "API Development & Integration",
+      "Database Design & Optimization"
+    ],
+    "techStack": {
+      "frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "backend": ["Node.js", "Express", "Bun", "tRPC", "GraphQL"],
+      "databases": ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Drizzle"],
+      "cloud": ["Vercel", "AWS", "Railway", "Supabase", "Cloudflare"],
+      "tools": ["Git", "Docker", "GitHub Actions", "Stripe", "Auth.js"]
+    }
+  },
+  "owner": {
+    "name": "Olatunbosun Bellaire",
+    "github": "olatunbell",
+    "title": "Lead Developer",
+    "yearsExperience": 5,
+    "timezone": "America/New_York"
+  },
+  "portfolio": {
+    "repos": [],
+    "highlights": [],
+    "lastSynced": null
+  },
+  "upwork": {
+    "profileUrl": "",
+    "hourlyRate": {
+      "min": 50,
+      "max": 100
+    },
+    "preferredProjectTypes": ["fixed", "hourly"],
+    "minFixedBudget": 500,
+    "workHours": {
+      "start": 9,
+      "end": 18,
+      "timezone": "America/New_York"
+    }
+  },
+  "differentiators": [
+    "Ship fast without cutting corners",
+    "Clear communication with daily updates",
+    "Production-ready code from day one",
+    "Modern tech stack expertise",
+    "Full-stack capability - no handoffs needed"
+  ],
+  "socialProof": {
+    "jobSuccessScore": null,
+    "totalEarnings": null,
+    "completedProjects": 0,
+    "testimonials": []
+  }
+}

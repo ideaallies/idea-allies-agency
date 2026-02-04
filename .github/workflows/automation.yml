@@ -1,0 +1,75 @@
+name: Upwork Pipeline Automation
+
+on:
+  schedule:
+    # Run every 30 minutes during business hours (9 AM - 6 PM EST)
+    # EST is UTC-5, so 9 AM EST = 14:00 UTC, 6 PM EST = 23:00 UTC
+    - cron: '*/30 14-23 * * 1-5'  # Weekdays
+    - cron: '0 8 * * 1-5'         # Daily digest at 8 AM EST (13:00 UTC)
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  fetch-and-process:
+    runs-on: ubuntu-latest
+    if: github.event.schedule != '0 8 * * 1-5'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Restore database
+        uses: actions/cache@v4
+        with:
+          path: data/pipeline.db
+          key: pipeline-db-${{ github.run_id }}
+          restore-keys: |
+            pipeline-db-
+
+      - name: Run automation
+        env:
+          VOLLNA_FEED_URL: ${{ secrets.VOLLNA_FEED_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: bun run auto
+
+      - name: Save database
+        uses: actions/cache@v4
+        with:
+          path: data/pipeline.db
+          key: pipeline-db-${{ github.run_id }}
+
+  daily-digest:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 8 * * 1-5'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Restore database
+        uses: actions/cache@v4
+        with:
+          path: data/pipeline.db
+          key: pipeline-db-${{ github.run_id }}
+          restore-keys: |
+            pipeline-db-
+
+      - name: Send daily digest
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: bun run digest

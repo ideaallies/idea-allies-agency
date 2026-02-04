@@ -1,0 +1,99 @@
+{
+  "templates": {
+    "fullStack": {
+      "name": "Full-Stack Web App",
+      "triggers": ["full-stack", "fullstack", "web app", "web application", "saas"],
+      "structure": {
+        "hook": "I've built production Next.js/React applications that handle {scale} — and I can bring that same quality to {projectName}.",
+        "understanding": "Reading your requirements, you need:\n{bulletPoints}",
+        "approach": "Here's how I'd approach this:\n\n**Week 1:** {phase1}\n**Week 2:** {phase2}\n**Week 3:** {phase3}",
+        "proof": "Relevant work:\n• {project1}\n• {project2}",
+        "cta": "Quick question: {clarifyingQuestion}\n\nHappy to jump on a quick call to discuss the architecture.",
+        "signature": "— Olatunbosun, Idea Allies"
+      }
+    },
+    "frontend": {
+      "name": "Frontend/UI Focus",
+      "triggers": ["frontend", "front-end", "ui", "ux", "landing page", "redesign", "tailwind"],
+      "structure": {
+        "hook": "I specialize in clean, performant React interfaces — {specificDetail} caught my attention.",
+        "understanding": "Your UI needs:\n{bulletPoints}",
+        "approach": "My approach:\n1. Component architecture audit\n2. Pixel-perfect implementation\n3. Responsive polish + animations\n4. Performance optimization",
+        "proof": "Recent frontend work: {portfolioLink}",
+        "cta": "Do you have Figma files, or should I work from reference designs?",
+        "signature": "— Olatunbosun, Idea Allies"
+      }
+    },
+    "api": {
+      "name": "API/Backend",
+      "triggers": ["api", "backend", "integration", "database", "server", "node"],
+      "structure": {
+        "hook": "I've architected APIs handling {scale} requests — {specificDetail} is exactly the kind of challenge I enjoy.",
+        "understanding": "Backend requirements I see:\n{bulletPoints}",
+        "approach": "Technical approach:\n• RESTful/GraphQL endpoint design\n• Database schema optimization\n• Authentication & rate limiting\n• Comprehensive testing",
+        "proof": "Similar API work: {portfolioLink}",
+        "cta": "What's your current tech stack? I want to ensure seamless integration.",
+        "signature": "— Olatunbosun, Idea Allies"
+      }
+    },
+    "bugFix": {
+      "name": "Bug Fix/Debugging",
+      "triggers": ["bug", "fix", "issue", "broken", "not working", "debug"],
+      "structure": {
+        "hook": "I've debugged complex {techStack} issues before — I can usually identify root causes within hours.",
+        "understanding": "From your description, the issue involves:\n{bulletPoints}",
+        "approach": "My debugging process:\n1. Reproduce the issue locally\n2. Trace through logs/stack traces\n3. Identify root cause\n4. Fix + add tests to prevent regression",
+        "proof": "I've resolved similar {issueType} issues in past projects.",
+        "cta": "Can you share error logs or steps to reproduce? I can give you a more accurate estimate.",
+        "signature": "— Olatunbosun, Idea Allies"
+      }
+    },
+    "mvp": {
+      "name": "MVP/Startup",
+      "triggers": ["mvp", "startup", "prototype", "validate", "launch", "idea"],
+      "structure": {
+        "hook": "I help startups ship MVPs fast — I understand the 'build to learn' mindset.",
+        "understanding": "For your MVP, the core features are:\n{bulletPoints}",
+        "approach": "MVP strategy:\n1. Core user flow first (no bells and whistles)\n2. Ship in {timeline}\n3. Built for iteration (clean code, not throwaway)\n4. Analytics from day one",
+        "proof": "Recent MVP: {portfolioLink} — shipped in {duration}",
+        "cta": "What's your target launch date? I can work backwards from there.",
+        "signature": "— Olatunbosun, Idea Allies"
+      }
+    },
+    "maintenance": {
+      "name": "Ongoing/Maintenance",
+      "triggers": ["ongoing", "long-term", "maintenance", "support", "retainer", "monthly"],
+      "structure": {
+        "hook": "I work well in ongoing partnerships — consistent availability, fast turnaround, proactive communication.",
+        "understanding": "Your ongoing needs include:\n{bulletPoints}",
+        "approach": "How I handle ongoing work:\n• Dedicated hours per week\n• Slack/Discord availability\n• Same-day response for urgent issues\n• Weekly progress summaries",
+        "proof": "I've maintained {projectType} projects for {duration}+ with similar scope.",
+        "cta": "What's your typical weekly volume of tasks? I can suggest an arrangement.",
+        "signature": "— Olatunbosun, Idea Allies"
+      }
+    },
+    "generic": {
+      "name": "Generic/Fallback",
+      "triggers": [],
+      "structure": {
+        "hook": "Hi! Your project aligns well with my expertise in {techStack}.",
+        "understanding": "Key requirements I identified:\n{bulletPoints}",
+        "approach": "I'd approach this by:\n{approach}",
+        "proof": "Relevant experience: {portfolioLink}",
+        "cta": "{clarifyingQuestion}",
+        "signature": "— Olatunbosun, Idea Allies"
+      }
+    }
+  },
+  "variables": {
+    "scale": ["1M+ users", "10K+ daily active users", "high-traffic applications", "enterprise clients"],
+    "duration": ["2 weeks", "3 weeks", "1 month"],
+    "projectTypes": ["SaaS platforms", "e-commerce sites", "dashboards", "marketplaces"]
+  },
+  "formatting": {
+    "maxLength": 2000,
+    "paragraphBreaks": true,
+    "bulletStyle": "•",
+    "avoidWords": ["I think", "maybe", "possibly", "I believe", "just", "actually"]
+  }
+}

@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Database
+data/*.db
+data/.last_digest
+
+# Environment
+.env
+.env.local
+
+# Build
+dist/
+*.tsbuildinfo
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Review files (generated)
+data/review_queue_*.md
