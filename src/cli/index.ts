@@ -3,6 +3,7 @@ import { sendJobAlert, sendDailyDigest } from "../alerts/discord.js";
 import { generateProposal } from "../ai/proposalGen.js";
 import { scoreJob } from "../ai/scorer.js";
 import { generateReviewFile, printReviewSummary } from "../automation/review-queue.js";
+import { syncPortfolio, listPortfolio } from "../portfolio/github.js";
 import {
   getAllJobs,
   getJob,
@@ -28,6 +29,7 @@ const commands: Record<string, (args: string[]) => Promise<void> | void> = {
   track: cmdTrack,
   stats: cmdStats,
   digest: cmdDigest,
+  portfolio: cmdPortfolio,
   help: cmdHelp,
 };
 
@@ -314,6 +316,16 @@ async function cmdDigest() {
   }
 }
 
+async function cmdPortfolio(args: string[]) {
+  const subcommand = args[0] || "sync";
+
+  if (subcommand === "list") {
+    listPortfolio();
+  } else {
+    await syncPortfolio();
+  }
+}
+
 function cmdHelp() {
   console.log(`
 Idea Allies Upwork Pipeline
@@ -332,7 +344,8 @@ Commands:
   bun run track          Show pipeline status
   bun run stats          Show detailed statistics
   bun run digest         Send daily digest to Discord
-  bun run portfolio      Sync GitHub portfolio
+  bun run portfolio      Sync GitHub repos (won't touch showcase)
+  bun run portfolio list Show showcase + new un-curated repos
   bun run test-discord   Test Discord webhook
 
 Status values: submitted, responded, won, lost, rejected

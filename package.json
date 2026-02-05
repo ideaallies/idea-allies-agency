@@ -14,7 +14,7 @@
     "status": "npx tsx src/cli/index.ts status",
     "track": "npx tsx src/cli/index.ts track",
     "stats": "npx tsx src/cli/index.ts stats",
-    "portfolio": "npx tsx src/portfolio/github.ts",
+    "portfolio": "npx tsx src/cli/index.ts portfolio",
     "test-discord": "npx tsx src/alerts/discord.ts test",
     "digest": "npx tsx src/cli/index.ts digest"
   },

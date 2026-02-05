@@ -41,7 +41,7 @@
     "timezone": "Europe/London"
   },
   "portfolio": {
-    "repos": [
+    "showcase": [
       {
         "name": "Combat Tix",
         "org": "Combat-Tix",
@@ -151,6 +151,7 @@
         "sector": "Publishing & Editorial"
       }
     ],
+    "githubRepos": [],
     "highlights": [
       "TRCN — 8-repo full suite for a government education body (Vue + TS + Python)",
       "Combat Tix — Full-stack event ticketing platform",
